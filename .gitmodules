@@ -1,8 +1,8 @@
-[submodule "src-frontend"]
-	path = src-frontend
+[submodule "src/src-frontend"]
+	path = src/src-frontend
 	url = https://github.com/MarEscVer/BooknBookFront.git
 	branch = master
-[submodule "src-api"]
-	path = src-api
+[submodule "src/src-api"]
+	path = src/src-api
 	url = https://github.com/MarEscVer/BookNBookBack.git
 	branch = master
