@@ -1,8 +1,8 @@
 # Book 'N Book
 
 #### Curso Escolar 2023-2024
-#### Autor: [María Escribano Verde](Enlace a su cuenta de gitHub)
-#### Tutor: [Antonio Gabriel González Casado](Enlace a su cuenta de gitHub)
+#### Autor: [María Escribano Verde](https://github.com/MarEscVer)
+#### Tutor: [Antonio Gabriel González Casado](https://github.com/prof-antonio-gabriel)
 #### Fecha de Inicio: 01-04-2024
 #### Fecha de Finalización: 12-06-2024
 
