@@ -17,4 +17,4 @@ La aplicación web Book 'N Book tiene como propósito principal proporcionar a l
 En el repositorio de entrega, se encontrarán las siguientes carpetas relevantes:
 - **src-api**: todo el código relacionado con la API REST de la aplicación. Incluye los archivos y carpetas necesarios para el desarrollo del backend, como los controladores, modelos, servicios, y configuraciones.
 - **src-frontend**: código del frontend de la aplicación. Incluye todos los archivos relacionados con la interfaz de usuario, como componentes, estilos, imágenes y archivos de configuración del framework o tecnología utilizada.
-- **docs**: documentación relevante para el proyecto. Incluye documentos de diseño, especificaciones técnicas, diagramas, entre otros.
+- **docs**: documentación relevante para el proyecto. Incluye diversoso docuemntos: documentación total, documentación de diseño (prototipado figma), documentación de modelado de datos (diagrama). 
