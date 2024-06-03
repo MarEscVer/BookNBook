@@ -1,0 +1,45 @@
+version: "3"
+services:
+  angular:
+    build: ./BookNBookFRONT/BooknBookFront/
+    container_name: "frontcontainer"
+    ports:
+      - 4200:4200
+    depends_on:
+      - app
+
+  app:
+    build: BooknBookBACK
+    container_name: "backcontainer"
+    ports:
+      - "8080:8080"
+    environment:
+      DATABASE_URL: jdbc:mysql://mysql_bnb:3306/booknbook?allowPublicKeyRetrieval=true&useSSL=false
+      DATABASE_USERNAME: root
+      DATABASE_PASSWORD: 123456
+    restart: always
+    depends_on:
+      mysql_bnb:
+        condition: service_healthy
+
+  mysql_bnb:
+    container_name: "mysqlcontainer"
+    image: mysql:8.0.33
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_DATABASE: booknbook
+      MYSQL_PASSWORD: 123456
+      MYSQL_ROOT_PASSWORD: 123456
+    restart: always
+    volumes:
+      - volume:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 10s
+      retries: 2
+
+volumes:
+  volume:
+
+# docker-compose down && docker-compose build --no-cache && docker-compose up
