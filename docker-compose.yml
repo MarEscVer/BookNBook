@@ -3,7 +3,7 @@ services:
     build: ./BookNBookFRONT/BooknBookFront/
     container_name: "frontcontainer"
     ports:
-      - 4200:4200
+      - "80:80"
     depends_on:
       - app
 
